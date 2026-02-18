@@ -1,0 +1,9 @@
+{
+    "app_title": "Application Universelle",
+    "hello": "Bonjour",
+    "settings": "Paramètres",
+    "language": "Langue",
+    "welcome": "Bienvenue sur l'Application Universelle !",
+    "description": "Cette application prend en charge plusieurs langues et démontre l'internationalisation Flutter.",
+    "about": "À propos"
+}

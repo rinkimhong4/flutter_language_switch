@@ -1,0 +1,18 @@
+{
+    "app_title": "Aplicación Universal",
+    "hello": "Hola",
+    "settings": "Configuración",
+    "language": "Idioma",
+    "welcome": "¡Bienvenido a la Aplicación Universal!",
+    "description": "Esta aplicación admite múltiples idiomas y demuestra la internacionalización de Flutter.",
+    "about": "Acerca de",
+    "login": "Iniciar Sesión",
+    "logout": "Cerrar Sesión",
+    "profile": "Perfil",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "search": "Buscar",
+    "error": "Error",
+    "success": "Éxito",
+    "loading": "Cargando..."
+}

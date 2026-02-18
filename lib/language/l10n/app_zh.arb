@@ -1,0 +1,10 @@
+{
+    "app_title": "通用应用",
+    "hello": "你好",
+    "settings": "设置",
+    "language": "语言",
+    "welcome": "欢迎使用通用应用！",
+    "description": "此应用支持多种语言，并展示了Flutter国际化功能。",
+    "about": "关于",
+    "name":"金虹"
+}

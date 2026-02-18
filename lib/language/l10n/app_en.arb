@@ -1,0 +1,19 @@
+{
+    "app_title": "Universal App",
+    "hello": "Hello",
+    "settings": "Settings",
+    "language": "Language",
+    "welcome": "Welcome to the Universal App!",
+    "description": "This app supports multiple languages and demonstrates Flutter internationalization.",
+    "about": "About",
+    "login": "Login",
+    "logout": "Logout",
+    "profile": "Profile",
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "error": "Error",
+    "success": "Success",
+    "loading": "Loading...",
+    "name":"hong"
+}
