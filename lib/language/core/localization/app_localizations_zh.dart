@@ -30,31 +30,31 @@ class AppLocalizationsZh extends AppLocalizations {
   String get about => '关于';
 
   @override
-  String get login => 'ចូល';
+  String get login => '登录';
 
   @override
-  String get logout => 'ចេញ';
+  String get logout => '登出';
 
   @override
-  String get profile => 'ប្រវត្តិរូប';
+  String get profile => '个人资料';
 
   @override
-  String get save => 'រក្សាទុក';
+  String get save => '保存';
 
   @override
-  String get cancel => 'បោះបង់';
+  String get cancel => '取消';
 
   @override
-  String get search => 'ស្វែងរក';
+  String get search => '搜索';
 
   @override
-  String get error => 'មានបញ្ហា';
+  String get error => '错误';
 
   @override
-  String get success => 'ជោគជ័យ';
+  String get success => '成功';
 
   @override
-  String get loading => 'កំពុងផ្ទុក...';
+  String get loading => '加载中...';
 
   @override
   String get name => '金虹';

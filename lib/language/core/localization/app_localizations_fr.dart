@@ -31,32 +31,32 @@ class AppLocalizationsFr extends AppLocalizations {
   String get about => 'À propos';
 
   @override
-  String get login => 'ចូល';
+  String get login => 'Connexion';
 
   @override
-  String get logout => 'ចេញ';
+  String get logout => 'Déconnexion';
 
   @override
-  String get profile => 'ប្រវត្តិរូប';
+  String get profile => 'Profil';
 
   @override
-  String get save => 'រក្សាទុក';
+  String get save => 'Enregistrer';
 
   @override
-  String get cancel => 'បោះបង់';
+  String get cancel => 'Annuler';
 
   @override
-  String get search => 'ស្វែងរក';
+  String get search => 'Rechercher';
 
   @override
-  String get error => 'មានបញ្ហា';
+  String get error => 'Erreur';
 
   @override
-  String get success => 'ជោគជ័យ';
+  String get success => 'Succès';
 
   @override
-  String get loading => 'កំពុងផ្ទុក...';
+  String get loading => 'Chargement...';
 
   @override
-  String get name => 'ហុង';
+  String get name => 'hong';
 }

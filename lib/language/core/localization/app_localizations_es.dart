@@ -58,5 +58,5 @@ class AppLocalizationsEs extends AppLocalizations {
   String get loading => 'Cargando...';
 
   @override
-  String get name => 'ហុង';
+  String get name => 'hong';
 }

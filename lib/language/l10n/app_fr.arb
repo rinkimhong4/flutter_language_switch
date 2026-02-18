@@ -5,5 +5,15 @@
     "language": "Langue",
     "welcome": "Bienvenue sur l'Application Universelle !",
     "description": "Cette application prend en charge plusieurs langues et démontre l'internationalisation Flutter.",
-    "about": "À propos"
+    "about": "À propos",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "profile": "Profil",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "search": "Rechercher",
+    "error": "Erreur",
+    "success": "Succès",
+    "loading": "Chargement...",
+    "name": "hong"
 }

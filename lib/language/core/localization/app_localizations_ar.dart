@@ -31,32 +31,32 @@ class AppLocalizationsAr extends AppLocalizations {
   String get about => 'حول';
 
   @override
-  String get login => 'الدخول تسجيل';
+  String get login => 'تسجيل الدخول';
 
   @override
-  String get logout => 'ចេញ';
+  String get logout => 'تسجيل الخروج';
 
   @override
-  String get profile => 'ប្រវត្តិរូប';
+  String get profile => 'الملف الشخصي';
 
   @override
-  String get save => 'រក្សាទុក';
+  String get save => 'حفظ';
 
   @override
-  String get cancel => 'បោះបង់';
+  String get cancel => 'إلغاء';
 
   @override
-  String get search => 'ស្វែងរក';
+  String get search => 'بحث';
 
   @override
-  String get error => 'មានបញ្ហា';
+  String get error => 'خطأ';
 
   @override
-  String get success => 'ជោគជ័យ';
+  String get success => 'نجاح';
 
   @override
-  String get loading => 'កំពុងផ្ទុក...';
+  String get loading => 'جاري التحميل...';
 
   @override
-  String get name => 'ហុង';
+  String get name => 'هونغ';
 }
