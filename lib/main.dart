@@ -5,6 +5,7 @@ import 'package:test_code/auth_node/providers/user_provider.dart';
 import 'package:test_code/fetch_api/controllers/product_controller.dart';
 import 'package:test_code/fetch_api/core/network/api_client.dart';
 import 'package:test_code/language/core/localization/language_controller.dart';
+import 'package:test_code/multi_json_data/controllers/dashboard_controller.dart';
 
 /// This for language controller when
 /// add new language to app dont forget to run
@@ -22,6 +23,12 @@ void main() async {
         Provider(create: (_) => ApiClient()),
         ChangeNotifierProvider(
           create: (context) => ProductController(context.read<ApiClient>()),
+        ),
+
+        ChangeNotifierProvider<DashboardController>(
+          create: (context) => DashboardController(
+            // context.read<DummyApiService>(),
+          ),
         ),
       ],
       child: const MyApp(),

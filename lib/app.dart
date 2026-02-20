@@ -9,6 +9,7 @@ import 'package:test_code/fetch_api/views/screen/splash_screen.dart';
 import 'package:test_code/language/core/localization/app_localizations.dart';
 import 'package:test_code/language/core/localization/language_controller.dart';
 import 'package:test_code/language/core/localization/supported_locales.dart';
+import 'package:test_code/multi_json_data/views/dashboard_screen.dart';
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
@@ -42,7 +43,8 @@ class _MyAppState extends State<MyApp> {
       ),
       // home: const HomeScreen(),
       // home: const ProductScreen(),
-      home: const SplashScreen(),
+      // home: const SplashScreen(),
+      home: const DashboardScreen(),
       // home: Provider.of<UserProvider>(context).user.token.isEmpty
       //     ? const SignupScreen()
       //     : const AuthHomeScreen(),
