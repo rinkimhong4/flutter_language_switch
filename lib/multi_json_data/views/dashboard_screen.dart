@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:test_code/multi_json_data/controllers/dashboard_controller.dart';
@@ -78,18 +79,54 @@ class ProductsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final c = context.read<DashboardController>();
-
     return Scaffold(
-      appBar: AppBar(title: const Text("Products")),
-      body: ListView.builder(
-        itemCount: c.products.length,
-        itemBuilder: (context, index) {
-          final p = c.products[index];
-          return ListTile(
-            leading: Image.network(p.thumbnail, width: 50, height: 50),
-            title: Text(p.title),
-            subtitle: Text("\$${p.price}"),
+      appBar: AppBar(
+        title: const Text("Products"),
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(60),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Consumer<DashboardController>(
+              builder: (context, c, _) => TextField(
+                decoration: InputDecoration(
+                  hintText: "Search products...",
+                  prefixIcon: const Icon(Icons.search),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                ),
+                onChanged: c.searchProducts,
+              ),
+            ),
+          ),
+        ),
+      ),
+      body: Consumer<DashboardController>(
+        builder: (context, c, _) {
+          if (c.loading) {
+            return const Center(child: CircularProgressIndicator());
+          }
+          if (c.products.isEmpty) {
+            return const Center(child: Text("No products found"));
+          }
+
+          return ListView.builder(
+            itemCount: c.products.length,
+            itemBuilder: (context, index) {
+              final p = c.products[index];
+              return ListTile(
+                leading: CachedNetworkImage(
+                  width: 50,
+                  height: 50,
+                  imageUrl: p.thumbnail,
+                  placeholder: (context, url) =>
+                      const CircularProgressIndicator(),
+                  errorWidget: (context, url, error) => const Icon(Icons.error),
+                ),
+                title: Text(p.title),
+                subtitle: Text("\$${p.price}"),
+              );
+            },
           );
         },
       ),
